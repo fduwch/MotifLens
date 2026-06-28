@@ -1,0 +1,50 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.ipynb_checkpoints/
+
+# Environments
+.venv/
+venv/
+env/
+.env
+.env.*
+
+# Large/local data and generated artifacts
+data/raw/
+data/processed/
+outputs/runs/
+outputs/evidence/
+outputs/baselines/
+outputs/checkpoints/
+outputs/**/*.pt
+outputs/**/*.pth
+outputs/**/*.ckpt
+outputs/**/*.pkl
+outputs/**/*.pickle
+outputs/**/*.jsonl
+
+# Logs and temporary files
+*.log
+*.tmp
+tmp/
+logs/
+
+# Credentials
+id_rsa
+id_ed25519
+*.pem
+*.key
+*.crt
+*.p12
+*.pfx
+
+# OS/editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/

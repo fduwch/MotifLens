@@ -1,0 +1,6 @@
+method,role,repo,status,reason
+BERT4ETH,classic Ethereum transaction-language baseline,https://github.com/Bayi-Hu/BERT4ETH_PyTorch / https://github.com/git-disl/BERT4ETH,in_progress_this_round,official PyTorch repository cloned; controlled four-dataset 5-seed run is queued in the shared SOTA environment
+ZipZap,efficient Ethereum transaction-language baseline,https://github.com/git-disl/ZipZap,in_progress_this_round,official repository cloned; isolated Python environment created; controlled four-dataset 5-seed run is being prepared
+TLmGNN,SOTA transaction language model + GNN baseline,https://github.com/lincozz/TLmGNN,in_progress_this_round,official repository cloned; controlled four-dataset 5-seed run is queued in the shared SOTA environment
+BWGNN,general graph anomaly detection SOTA baseline,https://github.com/squareRoot3/Rethinking-Anomaly-Detection,in_progress_this_round,official repository cloned; controlled four-dataset 5-seed run is queued in the shared SOTA environment
+LMAE4Eth,SOTA multi-view Ethereum fraud baseline,https://github.com/lmae4eth/LMAE4Eth,in_progress_this_round,official repository cloned; isolated Python environment is being created; controlled four-dataset 5-seed run is being prepared

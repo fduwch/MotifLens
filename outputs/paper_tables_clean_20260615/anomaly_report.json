@@ -1,0 +1,1056 @@
+{
+  "summary": {
+    "generated_at": "2026-06-16 13:27:58 UTC",
+    "main_completed": 340,
+    "main_expected": 340,
+    "main_missing": 0,
+    "ablation_completed": 80,
+    "ablation_expected": 80,
+    "ablation_missing": 0,
+    "missing_by_method": {},
+    "code_suspect_count": 29,
+    "error_count": 0,
+    "warning_count": 41
+  },
+  "findings": [
+    {
+      "severity": "warning",
+      "type": "high_std",
+      "message": "EPSD-Ponzi/bwgnn test_f1 std=0.0597 over 5 seeds; inspect split sensitivity before using a single-seed claim.",
+      "dataset": "EPSD-Ponzi",
+      "method": "bwgnn",
+      "evidence": {
+        "mean_f1": 0.594310665157172,
+        "std_f1": 0.05972896232606346,
+        "seeds": [
+          [
+            42,
+            0.6859903381642513
+          ],
+          [
+            43,
+            0.5230769230769231
+          ],
+          [
+            44,
+            0.5675675675675675
+          ],
+          [
+            45,
+            0.5921787709497207
+          ],
+          [
+            46,
+            0.6027397260273972
+          ]
+        ]
+      }
+    },
+    {
+      "severity": "warning",
+      "type": "high_std",
+      "message": "EPSD-Ponzi/gat test_f1 std=0.0498 over 5 seeds; inspect split sensitivity before using a single-seed claim.",
+      "dataset": "EPSD-Ponzi",
+      "method": "gat",
+      "evidence": {
+        "mean_f1": 0.5633978169942931,
+        "std_f1": 0.049765405454937184,
+        "seeds": [
+          [
+            42,
+            0.6467661691542289
+          ],
+          [
+            43,
+            0.5148514851485149
+          ],
+          [
+            44,
+            0.5416666666666666
+          ],
+          [
+            45,
+            0.5523012552301255
+          ],
+          [
+            46,
+            0.5614035087719298
+          ]
+        ]
+      }
+    },
+    {
+      "severity": "warning",
+      "type": "high_std",
+      "message": "EPSD-Ponzi/gcn test_f1 std=0.0478 over 5 seeds; inspect split sensitivity before using a single-seed claim.",
+      "dataset": "EPSD-Ponzi",
+      "method": "gcn",
+      "evidence": {
+        "mean_f1": 0.544046971660923,
+        "std_f1": 0.04775435136875929,
+        "seeds": [
+          [
+            42,
+            0.6244343891402715
+          ],
+          [
+            43,
+            0.5235602094240838
+          ],
+          [
+            44,
+            0.5454545454545454
+          ],
+          [
+            45,
+            0.5
+          ],
+          [
+            46,
+            0.5267857142857143
+          ]
+        ]
+      }
+    },
+    {
+      "severity": "warning",
+      "type": "high_std",
+      "message": "EPSD-Ponzi/graphconsis_gnn test_f1 std=0.0524 over 5 seeds; inspect split sensitivity before using a single-seed claim.",
+      "dataset": "EPSD-Ponzi",
+      "method": "graphconsis_gnn",
+      "evidence": {
+        "mean_f1": 0.6080541393644208,
+        "std_f1": 0.05244194041613077,
+        "seeds": [
+          [
+            42,
+            0.6918918918918919
+          ],
+          [
+            43,
+            0.5482233502538071
+          ],
+          [
+            44,
+            0.6095238095238096
+          ],
+          [
+            45,
+            0.6010362694300518
+          ],
+          [
+            46,
+            0.5895953757225434
+          ]
+        ]
+      }
+    },
+    {
+      "severity": "warning",
+      "type": "high_std",
+      "message": "EPSD-Ponzi/graphsage test_f1 std=0.0508 over 5 seeds; inspect split sensitivity before using a single-seed claim.",
+      "dataset": "EPSD-Ponzi",
+      "method": "graphsage",
+      "evidence": {
+        "mean_f1": 0.6034522827674715,
+        "std_f1": 0.05077429826389931,
+        "seeds": [
+          [
+            42,
+            0.6761904761904762
+          ],
+          [
+            43,
+            0.5347593582887701
+          ],
+          [
+            44,
+            0.6111111111111112
+          ],
+          [
+            45,
+            0.5882352941176471
+          ],
+          [
+            46,
+            0.6069651741293532
+          ]
+        ]
+      }
+    },
+    {
+      "severity": "warning",
+      "type": "high_std",
+      "message": "EPSD-Ponzi/lightgbm test_f1 std=0.0404 over 5 seeds; inspect split sensitivity before using a single-seed claim.",
+      "dataset": "EPSD-Ponzi",
+      "method": "lightgbm",
+      "evidence": {
+        "mean_f1": 0.6347365988237231,
+        "std_f1": 0.04044732076009559,
+        "seeds": [
+          [
+            42,
+            0.6746987951807228
+          ],
+          [
+            43,
+            0.5921787709497207
+          ],
+          [
+            44,
+            0.6802030456852792
+          ],
+          [
+            45,
+            0.6219512195121951
+          ],
+          [
+            46,
+            0.6046511627906976
+          ]
+        ]
+      }
+    },
+    {
+      "severity": "warning",
+      "type": "high_std",
+      "message": "EPSD-Ponzi/mlp test_f1 std=0.0427 over 5 seeds; inspect split sensitivity before using a single-seed claim.",
+      "dataset": "EPSD-Ponzi",
+      "method": "mlp",
+      "evidence": {
+        "mean_f1": 0.5137138439498741,
+        "std_f1": 0.04274532792549356,
+        "seeds": [
+          [
+            42,
+            0.5263157894736842
+          ],
+          [
+            43,
+            0.4461538461538462
+          ],
+          [
+            44,
+            0.5344827586206896
+          ],
+          [
+            45,
+            0.5588235294117647
+          ],
+          [
+            46,
+            0.5027932960893855
+          ]
+        ]
+      }
+    },
+    {
+      "severity": "warning",
+      "type": "high_std",
+      "message": "EPSD-Ponzi/ours test_f1 std=0.0442 over 5 seeds; inspect split sensitivity before using a single-seed claim.",
+      "dataset": "EPSD-Ponzi",
+      "method": "ours",
+      "evidence": {
+        "mean_f1": 0.6484877170828207,
+        "std_f1": 0.04421365806238417,
+        "seeds": [
+          [
+            42,
+            0.686046511627907
+          ],
+          [
+            43,
+            0.5795454545454546
+          ],
+          [
+            44,
+            0.6730769230769231
+          ],
+          [
+            45,
+            0.6292134831460674
+          ],
+          [
+            46,
+            0.6745562130177515
+          ]
+        ]
+      }
+    },
+    {
+      "severity": "warning",
+      "type": "high_std",
+      "message": "EPSD-Ponzi/pc_gnn test_f1 std=0.0751 over 5 seeds; inspect split sensitivity before using a single-seed claim.",
+      "dataset": "EPSD-Ponzi",
+      "method": "pc_gnn",
+      "evidence": {
+        "mean_f1": 0.6182054969783459,
+        "std_f1": 0.0750978075262622,
+        "seeds": [
+          [
+            42,
+            0.6892655367231638
+          ],
+          [
+            43,
+            0.49056603773584906
+          ],
+          [
+            44,
+            0.6470588235294118
+          ],
+          [
+            45,
+            0.6325581395348837
+          ],
+          [
+            46,
+            0.631578947368421
+          ]
+        ]
+      }
+    },
+    {
+      "severity": "warning",
+      "type": "high_std",
+      "message": "EPSD-Ponzi/rf test_f1 std=0.0740 over 5 seeds; inspect split sensitivity before using a single-seed claim.",
+      "dataset": "EPSD-Ponzi",
+      "method": "rf",
+      "evidence": {
+        "mean_f1": 0.5922954354689856,
+        "std_f1": 0.07401383068224864,
+        "seeds": [
+          [
+            42,
+            0.6627218934911243
+          ],
+          [
+            43,
+            0.5058823529411764
+          ],
+          [
+            44,
+            0.6703910614525139
+          ],
+          [
+            45,
+            0.5342465753424658
+          ],
+          [
+            46,
+            0.5882352941176471
+          ]
+        ]
+      }
+    },
+    {
+      "severity": "warning",
+      "type": "high_std",
+      "message": "Illicit-ETH/logreg test_f1 std=0.0501 over 5 seeds; inspect split sensitivity before using a single-seed claim.",
+      "dataset": "Illicit-ETH",
+      "method": "logreg",
+      "evidence": {
+        "mean_f1": 0.7636085978193871,
+        "std_f1": 0.05007947594616425,
+        "seeds": [
+          [
+            42,
+            0.8255813953488372
+          ],
+          [
+            43,
+            0.7141216991963261
+          ],
+          [
+            44,
+            0.7568238213399504
+          ],
+          [
+            45,
+            0.7178631051752922
+          ],
+          [
+            46,
+            0.8036529680365296
+          ]
+        ]
+      }
+    },
+    {
+      "severity": "warning",
+      "type": "high_std",
+      "message": "Meta/gcn test_f1 std=0.0248 over 5 seeds; inspect split sensitivity before using a single-seed claim.",
+      "dataset": "Meta",
+      "method": "gcn",
+      "evidence": {
+        "mean_f1": 0.9148270698235612,
+        "std_f1": 0.02479240509935187,
+        "seeds": [
+          [
+            42,
+            0.896
+          ],
+          [
+            43,
+            0.947075208913649
+          ],
+          [
+            44,
+            0.9361702127659575
+          ],
+          [
+            45,
+            0.898936170212766
+          ],
+          [
+            46,
+            0.8959537572254336
+          ]
+        ]
+      }
+    },
+    {
+      "severity": "ok",
+      "type": "raw_tabular_policy",
+      "message": "All completed tabular baseline metrics satisfy raw-node-feature-only checks."
+    },
+    {
+      "severity": "warning",
+      "type": "sequence_cache_unverified",
+      "message": "outputs/paper_sota_baselines_20260615/Meta/seed_42/zipzap/metrics.json does not report sequence_cache_metadata_verified=true; cache may be correct by path but is not self-verifying.",
+      "dataset": "Meta",
+      "method": "zipzap",
+      "seed": 42,
+      "likely_code_issue": {
+        "category": "cache_mismatch_or_unverifiable",
+        "suspect_files": [
+          "scripts/train_sota_baselines.py",
+          "llm_rationale_gnn/data.py"
+        ],
+        "checks": [
+          "Sequence cache should include cache_version, data_dir, num_nodes, num_edges, seq_len, and neighbor_buckets.",
+          "Graph cache metadata should match dataset and seed.",
+          "If cache metadata is missing or mismatched, rebuild cache before accepting the run."
+        ]
+      }
+    },
+    {
+      "severity": "warning",
+      "type": "sequence_cache_unverified",
+      "message": "outputs/paper_sota_baselines_20260615/Meta/seed_42/lmae4eth/metrics.json does not report sequence_cache_metadata_verified=true; cache may be correct by path but is not self-verifying.",
+      "dataset": "Meta",
+      "method": "lmae4eth",
+      "seed": 42,
+      "likely_code_issue": {
+        "category": "cache_mismatch_or_unverifiable",
+        "suspect_files": [
+          "scripts/train_sota_baselines.py",
+          "llm_rationale_gnn/data.py"
+        ],
+        "checks": [
+          "Sequence cache should include cache_version, data_dir, num_nodes, num_edges, seq_len, and neighbor_buckets.",
+          "Graph cache metadata should match dataset and seed.",
+          "If cache metadata is missing or mismatched, rebuild cache before accepting the run."
+        ]
+      }
+    },
+    {
+      "severity": "warning",
+      "type": "sequence_cache_unverified",
+      "message": "outputs/paper_sota_baselines_20260615/Meta/seed_42/bert4eth/metrics.json does not report sequence_cache_metadata_verified=true; cache may be correct by path but is not self-verifying.",
+      "dataset": "Meta",
+      "method": "bert4eth",
+      "seed": 42,
+      "likely_code_issue": {
+        "category": "cache_mismatch_or_unverifiable",
+        "suspect_files": [
+          "scripts/train_sota_baselines.py",
+          "llm_rationale_gnn/data.py"
+        ],
+        "checks": [
+          "Sequence cache should include cache_version, data_dir, num_nodes, num_edges, seq_len, and neighbor_buckets.",
+          "Graph cache metadata should match dataset and seed.",
+          "If cache metadata is missing or mismatched, rebuild cache before accepting the run."
+        ]
+      }
+    },
+    {
+      "severity": "warning",
+      "type": "sequence_cache_unverified",
+      "message": "outputs/paper_sota_baselines_20260615/Meta/seed_42/tlmgnn/metrics.json does not report sequence_cache_metadata_verified=true; cache may be correct by path but is not self-verifying.",
+      "dataset": "Meta",
+      "method": "tlmgnn",
+      "seed": 42,
+      "likely_code_issue": {
+        "category": "cache_mismatch_or_unverifiable",
+        "suspect_files": [
+          "scripts/train_sota_baselines.py",
+          "llm_rationale_gnn/data.py"
+        ],
+        "checks": [
+          "Sequence cache should include cache_version, data_dir, num_nodes, num_edges, seq_len, and neighbor_buckets.",
+          "Graph cache metadata should match dataset and seed.",
+          "If cache metadata is missing or mismatched, rebuild cache before accepting the run."
+        ]
+      }
+    },
+    {
+      "severity": "warning",
+      "type": "sequence_cache_unverified",
+      "message": "outputs/paper_sota_baselines_20260615/Meta/seed_42/bwgnn/metrics.json does not report sequence_cache_metadata_verified=true; cache may be correct by path but is not self-verifying.",
+      "dataset": "Meta",
+      "method": "bwgnn",
+      "seed": 42,
+      "likely_code_issue": {
+        "category": "cache_mismatch_or_unverifiable",
+        "suspect_files": [
+          "scripts/train_sota_baselines.py",
+          "llm_rationale_gnn/data.py"
+        ],
+        "checks": [
+          "Sequence cache should include cache_version, data_dir, num_nodes, num_edges, seq_len, and neighbor_buckets.",
+          "Graph cache metadata should match dataset and seed.",
+          "If cache metadata is missing or mismatched, rebuild cache before accepting the run."
+        ]
+      }
+    },
+    {
+      "severity": "warning",
+      "type": "sequence_cache_unverified",
+      "message": "outputs/paper_sota_baselines_20260615/Meta/seed_43/zipzap/metrics.json does not report sequence_cache_metadata_verified=true; cache may be correct by path but is not self-verifying.",
+      "dataset": "Meta",
+      "method": "zipzap",
+      "seed": 43,
+      "likely_code_issue": {
+        "category": "cache_mismatch_or_unverifiable",
+        "suspect_files": [
+          "scripts/train_sota_baselines.py",
+          "llm_rationale_gnn/data.py"
+        ],
+        "checks": [
+          "Sequence cache should include cache_version, data_dir, num_nodes, num_edges, seq_len, and neighbor_buckets.",
+          "Graph cache metadata should match dataset and seed.",
+          "If cache metadata is missing or mismatched, rebuild cache before accepting the run."
+        ]
+      }
+    },
+    {
+      "severity": "warning",
+      "type": "sequence_cache_unverified",
+      "message": "outputs/paper_sota_baselines_20260615/Meta/seed_43/lmae4eth/metrics.json does not report sequence_cache_metadata_verified=true; cache may be correct by path but is not self-verifying.",
+      "dataset": "Meta",
+      "method": "lmae4eth",
+      "seed": 43,
+      "likely_code_issue": {
+        "category": "cache_mismatch_or_unverifiable",
+        "suspect_files": [
+          "scripts/train_sota_baselines.py",
+          "llm_rationale_gnn/data.py"
+        ],
+        "checks": [
+          "Sequence cache should include cache_version, data_dir, num_nodes, num_edges, seq_len, and neighbor_buckets.",
+          "Graph cache metadata should match dataset and seed.",
+          "If cache metadata is missing or mismatched, rebuild cache before accepting the run."
+        ]
+      }
+    },
+    {
+      "severity": "warning",
+      "type": "sequence_cache_unverified",
+      "message": "outputs/paper_sota_baselines_20260615/Meta/seed_43/bert4eth/metrics.json does not report sequence_cache_metadata_verified=true; cache may be correct by path but is not self-verifying.",
+      "dataset": "Meta",
+      "method": "bert4eth",
+      "seed": 43,
+      "likely_code_issue": {
+        "category": "cache_mismatch_or_unverifiable",
+        "suspect_files": [
+          "scripts/train_sota_baselines.py",
+          "llm_rationale_gnn/data.py"
+        ],
+        "checks": [
+          "Sequence cache should include cache_version, data_dir, num_nodes, num_edges, seq_len, and neighbor_buckets.",
+          "Graph cache metadata should match dataset and seed.",
+          "If cache metadata is missing or mismatched, rebuild cache before accepting the run."
+        ]
+      }
+    },
+    {
+      "severity": "warning",
+      "type": "sequence_cache_unverified",
+      "message": "outputs/paper_sota_baselines_20260615/Meta/seed_43/tlmgnn/metrics.json does not report sequence_cache_metadata_verified=true; cache may be correct by path but is not self-verifying.",
+      "dataset": "Meta",
+      "method": "tlmgnn",
+      "seed": 43,
+      "likely_code_issue": {
+        "category": "cache_mismatch_or_unverifiable",
+        "suspect_files": [
+          "scripts/train_sota_baselines.py",
+          "llm_rationale_gnn/data.py"
+        ],
+        "checks": [
+          "Sequence cache should include cache_version, data_dir, num_nodes, num_edges, seq_len, and neighbor_buckets.",
+          "Graph cache metadata should match dataset and seed.",
+          "If cache metadata is missing or mismatched, rebuild cache before accepting the run."
+        ]
+      }
+    },
+    {
+      "severity": "warning",
+      "type": "sequence_cache_unverified",
+      "message": "outputs/paper_sota_baselines_20260615/Meta/seed_43/bwgnn/metrics.json does not report sequence_cache_metadata_verified=true; cache may be correct by path but is not self-verifying.",
+      "dataset": "Meta",
+      "method": "bwgnn",
+      "seed": 43,
+      "likely_code_issue": {
+        "category": "cache_mismatch_or_unverifiable",
+        "suspect_files": [
+          "scripts/train_sota_baselines.py",
+          "llm_rationale_gnn/data.py"
+        ],
+        "checks": [
+          "Sequence cache should include cache_version, data_dir, num_nodes, num_edges, seq_len, and neighbor_buckets.",
+          "Graph cache metadata should match dataset and seed.",
+          "If cache metadata is missing or mismatched, rebuild cache before accepting the run."
+        ]
+      }
+    },
+    {
+      "severity": "warning",
+      "type": "sequence_cache_unverified",
+      "message": "outputs/paper_sota_baselines_20260615/Meta/seed_44/zipzap/metrics.json does not report sequence_cache_metadata_verified=true; cache may be correct by path but is not self-verifying.",
+      "dataset": "Meta",
+      "method": "zipzap",
+      "seed": 44,
+      "likely_code_issue": {
+        "category": "cache_mismatch_or_unverifiable",
+        "suspect_files": [
+          "scripts/train_sota_baselines.py",
+          "llm_rationale_gnn/data.py"
+        ],
+        "checks": [
+          "Sequence cache should include cache_version, data_dir, num_nodes, num_edges, seq_len, and neighbor_buckets.",
+          "Graph cache metadata should match dataset and seed.",
+          "If cache metadata is missing or mismatched, rebuild cache before accepting the run."
+        ]
+      }
+    },
+    {
+      "severity": "warning",
+      "type": "sequence_cache_unverified",
+      "message": "outputs/paper_sota_baselines_20260615/Meta/seed_44/lmae4eth/metrics.json does not report sequence_cache_metadata_verified=true; cache may be correct by path but is not self-verifying.",
+      "dataset": "Meta",
+      "method": "lmae4eth",
+      "seed": 44,
+      "likely_code_issue": {
+        "category": "cache_mismatch_or_unverifiable",
+        "suspect_files": [
+          "scripts/train_sota_baselines.py",
+          "llm_rationale_gnn/data.py"
+        ],
+        "checks": [
+          "Sequence cache should include cache_version, data_dir, num_nodes, num_edges, seq_len, and neighbor_buckets.",
+          "Graph cache metadata should match dataset and seed.",
+          "If cache metadata is missing or mismatched, rebuild cache before accepting the run."
+        ]
+      }
+    },
+    {
+      "severity": "warning",
+      "type": "sequence_cache_unverified",
+      "message": "outputs/paper_sota_baselines_20260615/Meta/seed_44/bert4eth/metrics.json does not report sequence_cache_metadata_verified=true; cache may be correct by path but is not self-verifying.",
+      "dataset": "Meta",
+      "method": "bert4eth",
+      "seed": 44,
+      "likely_code_issue": {
+        "category": "cache_mismatch_or_unverifiable",
+        "suspect_files": [
+          "scripts/train_sota_baselines.py",
+          "llm_rationale_gnn/data.py"
+        ],
+        "checks": [
+          "Sequence cache should include cache_version, data_dir, num_nodes, num_edges, seq_len, and neighbor_buckets.",
+          "Graph cache metadata should match dataset and seed.",
+          "If cache metadata is missing or mismatched, rebuild cache before accepting the run."
+        ]
+      }
+    },
+    {
+      "severity": "warning",
+      "type": "sequence_cache_unverified",
+      "message": "outputs/paper_sota_baselines_20260615/Meta/seed_44/tlmgnn/metrics.json does not report sequence_cache_metadata_verified=true; cache may be correct by path but is not self-verifying.",
+      "dataset": "Meta",
+      "method": "tlmgnn",
+      "seed": 44,
+      "likely_code_issue": {
+        "category": "cache_mismatch_or_unverifiable",
+        "suspect_files": [
+          "scripts/train_sota_baselines.py",
+          "llm_rationale_gnn/data.py"
+        ],
+        "checks": [
+          "Sequence cache should include cache_version, data_dir, num_nodes, num_edges, seq_len, and neighbor_buckets.",
+          "Graph cache metadata should match dataset and seed.",
+          "If cache metadata is missing or mismatched, rebuild cache before accepting the run."
+        ]
+      }
+    },
+    {
+      "severity": "warning",
+      "type": "sequence_cache_unverified",
+      "message": "outputs/paper_sota_baselines_20260615/Meta/seed_44/bwgnn/metrics.json does not report sequence_cache_metadata_verified=true; cache may be correct by path but is not self-verifying.",
+      "dataset": "Meta",
+      "method": "bwgnn",
+      "seed": 44,
+      "likely_code_issue": {
+        "category": "cache_mismatch_or_unverifiable",
+        "suspect_files": [
+          "scripts/train_sota_baselines.py",
+          "llm_rationale_gnn/data.py"
+        ],
+        "checks": [
+          "Sequence cache should include cache_version, data_dir, num_nodes, num_edges, seq_len, and neighbor_buckets.",
+          "Graph cache metadata should match dataset and seed.",
+          "If cache metadata is missing or mismatched, rebuild cache before accepting the run."
+        ]
+      }
+    },
+    {
+      "severity": "warning",
+      "type": "sequence_cache_unverified",
+      "message": "outputs/paper_sota_baselines_20260615/Illicit-ETH/seed_42/zipzap/metrics.json does not report sequence_cache_metadata_verified=true; cache may be correct by path but is not self-verifying.",
+      "dataset": "Illicit-ETH",
+      "method": "zipzap",
+      "seed": 42,
+      "likely_code_issue": {
+        "category": "cache_mismatch_or_unverifiable",
+        "suspect_files": [
+          "scripts/train_sota_baselines.py",
+          "llm_rationale_gnn/data.py"
+        ],
+        "checks": [
+          "Sequence cache should include cache_version, data_dir, num_nodes, num_edges, seq_len, and neighbor_buckets.",
+          "Graph cache metadata should match dataset and seed.",
+          "If cache metadata is missing or mismatched, rebuild cache before accepting the run."
+        ]
+      }
+    },
+    {
+      "severity": "warning",
+      "type": "sequence_cache_unverified",
+      "message": "outputs/paper_sota_baselines_20260615/Illicit-ETH/seed_42/lmae4eth/metrics.json does not report sequence_cache_metadata_verified=true; cache may be correct by path but is not self-verifying.",
+      "dataset": "Illicit-ETH",
+      "method": "lmae4eth",
+      "seed": 42,
+      "likely_code_issue": {
+        "category": "cache_mismatch_or_unverifiable",
+        "suspect_files": [
+          "scripts/train_sota_baselines.py",
+          "llm_rationale_gnn/data.py"
+        ],
+        "checks": [
+          "Sequence cache should include cache_version, data_dir, num_nodes, num_edges, seq_len, and neighbor_buckets.",
+          "Graph cache metadata should match dataset and seed.",
+          "If cache metadata is missing or mismatched, rebuild cache before accepting the run."
+        ]
+      }
+    },
+    {
+      "severity": "warning",
+      "type": "sequence_cache_unverified",
+      "message": "outputs/paper_sota_baselines_20260615/Illicit-ETH/seed_42/bert4eth/metrics.json does not report sequence_cache_metadata_verified=true; cache may be correct by path but is not self-verifying.",
+      "dataset": "Illicit-ETH",
+      "method": "bert4eth",
+      "seed": 42,
+      "likely_code_issue": {
+        "category": "cache_mismatch_or_unverifiable",
+        "suspect_files": [
+          "scripts/train_sota_baselines.py",
+          "llm_rationale_gnn/data.py"
+        ],
+        "checks": [
+          "Sequence cache should include cache_version, data_dir, num_nodes, num_edges, seq_len, and neighbor_buckets.",
+          "Graph cache metadata should match dataset and seed.",
+          "If cache metadata is missing or mismatched, rebuild cache before accepting the run."
+        ]
+      }
+    },
+    {
+      "severity": "warning",
+      "type": "sequence_cache_unverified",
+      "message": "outputs/paper_sota_baselines_20260615/Illicit-ETH/seed_42/tlmgnn/metrics.json does not report sequence_cache_metadata_verified=true; cache may be correct by path but is not self-verifying.",
+      "dataset": "Illicit-ETH",
+      "method": "tlmgnn",
+      "seed": 42,
+      "likely_code_issue": {
+        "category": "cache_mismatch_or_unverifiable",
+        "suspect_files": [
+          "scripts/train_sota_baselines.py",
+          "llm_rationale_gnn/data.py"
+        ],
+        "checks": [
+          "Sequence cache should include cache_version, data_dir, num_nodes, num_edges, seq_len, and neighbor_buckets.",
+          "Graph cache metadata should match dataset and seed.",
+          "If cache metadata is missing or mismatched, rebuild cache before accepting the run."
+        ]
+      }
+    },
+    {
+      "severity": "warning",
+      "type": "sequence_cache_unverified",
+      "message": "outputs/paper_sota_baselines_20260615/Illicit-ETH/seed_42/bwgnn/metrics.json does not report sequence_cache_metadata_verified=true; cache may be correct by path but is not self-verifying.",
+      "dataset": "Illicit-ETH",
+      "method": "bwgnn",
+      "seed": 42,
+      "likely_code_issue": {
+        "category": "cache_mismatch_or_unverifiable",
+        "suspect_files": [
+          "scripts/train_sota_baselines.py",
+          "llm_rationale_gnn/data.py"
+        ],
+        "checks": [
+          "Sequence cache should include cache_version, data_dir, num_nodes, num_edges, seq_len, and neighbor_buckets.",
+          "Graph cache metadata should match dataset and seed.",
+          "If cache metadata is missing or mismatched, rebuild cache before accepting the run."
+        ]
+      }
+    },
+    {
+      "severity": "warning",
+      "type": "sequence_cache_unverified",
+      "message": "outputs/paper_sota_baselines_20260615/Illicit-ETH/seed_43/zipzap/metrics.json does not report sequence_cache_metadata_verified=true; cache may be correct by path but is not self-verifying.",
+      "dataset": "Illicit-ETH",
+      "method": "zipzap",
+      "seed": 43,
+      "likely_code_issue": {
+        "category": "cache_mismatch_or_unverifiable",
+        "suspect_files": [
+          "scripts/train_sota_baselines.py",
+          "llm_rationale_gnn/data.py"
+        ],
+        "checks": [
+          "Sequence cache should include cache_version, data_dir, num_nodes, num_edges, seq_len, and neighbor_buckets.",
+          "Graph cache metadata should match dataset and seed.",
+          "If cache metadata is missing or mismatched, rebuild cache before accepting the run."
+        ]
+      }
+    },
+    {
+      "severity": "warning",
+      "type": "sequence_cache_unverified",
+      "message": "outputs/paper_sota_baselines_20260615/Illicit-ETH/seed_43/lmae4eth/metrics.json does not report sequence_cache_metadata_verified=true; cache may be correct by path but is not self-verifying.",
+      "dataset": "Illicit-ETH",
+      "method": "lmae4eth",
+      "seed": 43,
+      "likely_code_issue": {
+        "category": "cache_mismatch_or_unverifiable",
+        "suspect_files": [
+          "scripts/train_sota_baselines.py",
+          "llm_rationale_gnn/data.py"
+        ],
+        "checks": [
+          "Sequence cache should include cache_version, data_dir, num_nodes, num_edges, seq_len, and neighbor_buckets.",
+          "Graph cache metadata should match dataset and seed.",
+          "If cache metadata is missing or mismatched, rebuild cache before accepting the run."
+        ]
+      }
+    },
+    {
+      "severity": "warning",
+      "type": "sequence_cache_unverified",
+      "message": "outputs/paper_sota_baselines_20260615/Illicit-ETH/seed_43/bert4eth/metrics.json does not report sequence_cache_metadata_verified=true; cache may be correct by path but is not self-verifying.",
+      "dataset": "Illicit-ETH",
+      "method": "bert4eth",
+      "seed": 43,
+      "likely_code_issue": {
+        "category": "cache_mismatch_or_unverifiable",
+        "suspect_files": [
+          "scripts/train_sota_baselines.py",
+          "llm_rationale_gnn/data.py"
+        ],
+        "checks": [
+          "Sequence cache should include cache_version, data_dir, num_nodes, num_edges, seq_len, and neighbor_buckets.",
+          "Graph cache metadata should match dataset and seed.",
+          "If cache metadata is missing or mismatched, rebuild cache before accepting the run."
+        ]
+      }
+    },
+    {
+      "severity": "warning",
+      "type": "sequence_cache_unverified",
+      "message": "outputs/paper_sota_baselines_20260615/Illicit-ETH/seed_43/tlmgnn/metrics.json does not report sequence_cache_metadata_verified=true; cache may be correct by path but is not self-verifying.",
+      "dataset": "Illicit-ETH",
+      "method": "tlmgnn",
+      "seed": 43,
+      "likely_code_issue": {
+        "category": "cache_mismatch_or_unverifiable",
+        "suspect_files": [
+          "scripts/train_sota_baselines.py",
+          "llm_rationale_gnn/data.py"
+        ],
+        "checks": [
+          "Sequence cache should include cache_version, data_dir, num_nodes, num_edges, seq_len, and neighbor_buckets.",
+          "Graph cache metadata should match dataset and seed.",
+          "If cache metadata is missing or mismatched, rebuild cache before accepting the run."
+        ]
+      }
+    },
+    {
+      "severity": "warning",
+      "type": "sequence_cache_unverified",
+      "message": "outputs/paper_sota_baselines_20260615/Illicit-ETH/seed_43/bwgnn/metrics.json does not report sequence_cache_metadata_verified=true; cache may be correct by path but is not self-verifying.",
+      "dataset": "Illicit-ETH",
+      "method": "bwgnn",
+      "seed": 43,
+      "likely_code_issue": {
+        "category": "cache_mismatch_or_unverifiable",
+        "suspect_files": [
+          "scripts/train_sota_baselines.py",
+          "llm_rationale_gnn/data.py"
+        ],
+        "checks": [
+          "Sequence cache should include cache_version, data_dir, num_nodes, num_edges, seq_len, and neighbor_buckets.",
+          "Graph cache metadata should match dataset and seed.",
+          "If cache metadata is missing or mismatched, rebuild cache before accepting the run."
+        ]
+      }
+    },
+    {
+      "severity": "warning",
+      "type": "sequence_cache_unverified",
+      "message": "outputs/paper_sota_baselines_20260615/Illicit-ETH/seed_44/zipzap/metrics.json does not report sequence_cache_metadata_verified=true; cache may be correct by path but is not self-verifying.",
+      "dataset": "Illicit-ETH",
+      "method": "zipzap",
+      "seed": 44,
+      "likely_code_issue": {
+        "category": "cache_mismatch_or_unverifiable",
+        "suspect_files": [
+          "scripts/train_sota_baselines.py",
+          "llm_rationale_gnn/data.py"
+        ],
+        "checks": [
+          "Sequence cache should include cache_version, data_dir, num_nodes, num_edges, seq_len, and neighbor_buckets.",
+          "Graph cache metadata should match dataset and seed.",
+          "If cache metadata is missing or mismatched, rebuild cache before accepting the run."
+        ]
+      }
+    },
+    {
+      "severity": "warning",
+      "type": "sequence_cache_unverified",
+      "message": "outputs/paper_sota_baselines_20260615/Illicit-ETH/seed_44/lmae4eth/metrics.json does not report sequence_cache_metadata_verified=true; cache may be correct by path but is not self-verifying.",
+      "dataset": "Illicit-ETH",
+      "method": "lmae4eth",
+      "seed": 44,
+      "likely_code_issue": {
+        "category": "cache_mismatch_or_unverifiable",
+        "suspect_files": [
+          "scripts/train_sota_baselines.py",
+          "llm_rationale_gnn/data.py"
+        ],
+        "checks": [
+          "Sequence cache should include cache_version, data_dir, num_nodes, num_edges, seq_len, and neighbor_buckets.",
+          "Graph cache metadata should match dataset and seed.",
+          "If cache metadata is missing or mismatched, rebuild cache before accepting the run."
+        ]
+      }
+    },
+    {
+      "severity": "ok",
+      "type": "baseline_evidence_policy",
+      "message": "Completed non-Ours baseline metrics do not report evidence usage."
+    },
+    {
+      "severity": "info",
+      "type": "delta_ours_graphsage",
+      "message": "Meta: Ours-GraphSAGE delta F1 = +0.0039.",
+      "dataset": "Meta",
+      "evidence": {
+        "ours_f1": 0.973185275952487,
+        "graphsage_f1": 0.9692435786289058,
+        "delta": 0.003941697323581295
+      }
+    },
+    {
+      "severity": "warning",
+      "type": "ours_below_lightgbm",
+      "message": "Meta: Ours F1=0.9732 is below raw LightGBM F1=0.9808; inspect whether graph/evidence helps this dataset.",
+      "dataset": "Meta",
+      "evidence": {
+        "ours_f1": 0.973185275952487,
+        "lightgbm_f1": 0.9807539742391632,
+        "delta": -0.007568698286676168
+      },
+      "likely_code_issue": {
+        "category": "llm_delta_issue",
+        "suspect_files": [
+          "llm_rationale_gnn/data.py",
+          "scripts/train_sampled.py",
+          "logs/researchh_summarize_paper_5seed_qwen_counter_clean_20260615.py"
+        ],
+        "checks": [
+          "Check Qwen motif evidence coverage and typed-evidence deduplication.",
+          "Check Rule+Qwen uses scalar_plus_motif evidence mode with correct evidence files.",
+          "If LLM hurts most seeds, inspect evidence quality rather than hiding the result."
+        ]
+      }
+    },
+    {
+      "severity": "info",
+      "type": "delta_ours_graphsage",
+      "message": "ZipZap: Ours-GraphSAGE delta F1 = +0.0182.",
+      "dataset": "ZipZap",
+      "evidence": {
+        "ours_f1": 0.9056748477093386,
+        "graphsage_f1": 0.8874815214861322,
+        "delta": 0.018193326223206352
+      }
+    },
+    {
+      "severity": "info",
+      "type": "delta_ours_graphsage",
+      "message": "Illicit-ETH: Ours-GraphSAGE delta F1 = +0.0176.",
+      "dataset": "Illicit-ETH",
+      "evidence": {
+        "ours_f1": 0.9627856105757432,
+        "graphsage_f1": 0.9452202754830442,
+        "delta": 0.017565335092698975
+      }
+    },
+    {
+      "severity": "info",
+      "type": "delta_ours_graphsage",
+      "message": "EPSD-Ponzi: Ours-GraphSAGE delta F1 = +0.0450.",
+      "dataset": "EPSD-Ponzi",
+      "evidence": {
+        "ours_f1": 0.6484877170828207,
+        "graphsage_f1": 0.6034522827674715,
+        "delta": 0.045035434315349177
+      }
+    },
+    {
+      "severity": "warning",
+      "type": "qwen_not_improving_base",
+      "message": "EPSD-Ponzi: Qwen motif minus Base GraphSAGE delta=-0.0019.",
+      "dataset": "EPSD-Ponzi",
+      "evidence": {
+        "base": 0.6034522827674715,
+        "qwen": 0.6015361290985712,
+        "delta": -0.0019161536689003
+      },
+      "likely_code_issue": {
+        "category": "llm_delta_issue",
+        "suspect_files": [
+          "llm_rationale_gnn/data.py",
+          "scripts/train_sampled.py",
+          "logs/researchh_summarize_paper_5seed_qwen_counter_clean_20260615.py"
+        ],
+        "checks": [
+          "Check Qwen motif evidence coverage and typed-evidence deduplication.",
+          "Check Rule+Qwen uses scalar_plus_motif evidence mode with correct evidence files.",
+          "If LLM hurts most seeds, inspect evidence quality rather than hiding the result."
+        ]
+      }
+    }
+  ],
+  "repairs": []
+}

@@ -1,0 +1,19 @@
+name: motiflens
+channels:
+  - pytorch
+  - pyg
+  - conda-forge
+dependencies:
+  - python=3.11
+  - numpy
+  - pandas
+  - scipy
+  - scikit-learn
+  - pytorch
+  - pytorch-cuda=12.1
+  - pyg
+  - tqdm
+  - pip
+  - pip:
+      - openai>=1.0
+      - lightgbm>=4.0

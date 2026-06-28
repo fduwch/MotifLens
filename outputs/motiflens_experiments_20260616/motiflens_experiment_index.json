@@ -1,0 +1,87 @@
+{
+  "created_at": "2026-06-16 09:57:20",
+  "deliverables": {
+    "main_table": "outputs/paper_tables_clean_20260615/main_comparison_table.md",
+    "ablation_table": "outputs/paper_5seed_qwen_counter_clean_pctrain_20260616/summary/summary.md",
+    "evidence_quality_coverage_md": "outputs/motiflens_experiments_20260616/evidence_quality_coverage_table.md",
+    "evidence_quality_coverage_csv": "outputs/motiflens_experiments_20260616/evidence_quality_coverage_table.csv",
+    "motif_distribution_csv": "outputs/motiflens_experiments_20260616/motif_distribution_table.csv",
+    "interpretability_cases_md": "outputs/motiflens_experiments_20260616/interpretability_case_studies.md"
+  },
+  "status": {
+    "main_rows_current": 334,
+    "main_rows_expected_full": 340,
+    "pctrain_rows_current": 69,
+    "pctrain_rows_expected": 80
+  },
+  "coverage_preview": [
+    {
+      "Dataset": "Meta",
+      "Nodes": 348984,
+      "Edges": 1256508,
+      "Rule rows": 321025,
+      "Rule edge cov.": "25.55%",
+      "Rule score mean": "0.356",
+      "Rule reason missing": "27.95%",
+      "LLM rows": 11179,
+      "LLM edge cov.": "0.89%",
+      "LLM support/counter": "4208/6971",
+      "LLM score mean": "0.726",
+      "LLM invalid score": "0.00%",
+      "Response JSON-like": "100.00%",
+      "Responses": 2763
+    },
+    {
+      "Dataset": "ZipZap",
+      "Nodes": 17447516,
+      "Edges": 56160047,
+      "Rule rows": 18771985,
+      "Rule edge cov.": "33.43%",
+      "Rule score mean": "0.341",
+      "Rule reason missing": "25.22%",
+      "LLM rows": 47460,
+      "LLM edge cov.": "0.08%",
+      "LLM support/counter": "20338/27122",
+      "LLM score mean": "0.728",
+      "LLM invalid score": "0.00%",
+      "Response JSON-like": "100.00%",
+      "Responses": 14985
+    },
+    {
+      "Dataset": "Illicit-ETH",
+      "Nodes": 2155979,
+      "Edges": 11582033,
+      "Rule rows": 2221711,
+      "Rule edge cov.": "19.18%",
+      "Rule score mean": "0.378",
+      "Rule reason missing": "20.72%",
+      "LLM rows": 13450,
+      "LLM edge cov.": "0.12%",
+      "LLM support/counter": "6390/7060",
+      "LLM score mean": "0.737",
+      "LLM invalid score": "0.00%",
+      "Response JSON-like": "100.00%",
+      "Responses": 4671
+    },
+    {
+      "Dataset": "EPSD-Ponzi",
+      "Nodes": 3317131,
+      "Edges": 19751913,
+      "Rule rows": 6118552,
+      "Rule edge cov.": "30.98%",
+      "Rule score mean": "0.338",
+      "Rule reason missing": "40.49%",
+      "LLM rows": 13119,
+      "LLM edge cov.": "0.07%",
+      "LLM support/counter": "6137/6982",
+      "LLM score mean": "0.760",
+      "LLM invalid score": "0.00%",
+      "Response JSON-like": "100.00%",
+      "Responses": 4361
+    }
+  ],
+  "efficiency_analysis_md": "outputs/motiflens_experiments_20260616/efficiency_analysis.md",
+  "efficiency_llm_generation_csv": "outputs/motiflens_experiments_20260616/efficiency_llm_generation.csv",
+  "efficiency_training_overhead_csv": "outputs/motiflens_experiments_20260616/efficiency_training_overhead.csv",
+  "efficiency_ablation_overhead_csv": "outputs/motiflens_experiments_20260616/efficiency_ablation_overhead.csv"
+}

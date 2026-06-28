@@ -1,0 +1,14 @@
+{
+  "display_main_rows": 296,
+  "display_main_expected": 300,
+  "rf_rows": 20,
+  "graphconsis_rows": 20,
+  "motiflens_rows": 17,
+  "ablation_rows": 70,
+  "ablation_expected": 80,
+  "anomaly_error_count": 0,
+  "anomaly_warning_count": 48,
+  "outputs/motiflens_experiments_20260616/evidence_quality_coverage_table.md": 1949,
+  "outputs/motiflens_experiments_20260616/interpretability_case_studies.md": 5510,
+  "outputs/motiflens_experiments_20260616/motiflens_main_comparison_table.md": 2028
+}

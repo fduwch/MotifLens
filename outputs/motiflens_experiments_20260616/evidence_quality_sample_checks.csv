@@ -1,0 +1,5 @@
+Dataset,Rule rows(sample/all),Rule score mean(sample),Rule reason missing(sample),LLM rows(sample/all),LLM reason missing(sample),Responses(sample),Avg response length(sample)
+Meta,50000/321025,0.377,30.42%,11179/11179,0.00%,2763,10611.9
+ZipZap,50000/18771985,0.281,73.47%,47460/47460,0.00%,14985,10227.6
+Illicit-ETH,50000/2221711,0.371,26.53%,13450/13450,0.00%,4671,10686.7
+EPSD-Ponzi,50000/6118552,0.515,0.02%,13119/13119,0.00%,4361,10868.4

@@ -1,0 +1,5 @@
+Dataset,Cards,Evidence edges,Elapsed hours,Cards/min,Evidence edges/min,Cards JSONL MB,Responses JSONL MB,Evidence CSV MB,Evidence file
+Meta,2764,11179,1.7125583333333334,26.899327030222814,108.79434763779335,7.91,27.97,2.16,outputs/phishcombine_qwen_counter_20260613/Meta_hop1/qwen_motif_evidence.csv
+ZipZap,14985,47460,9.445616666666666,26.440835872724033,83.7425472485474,40.18,146.17,9.38,outputs/phishcombine_qwen_counter_20260613/ZipZap_hop1/qwen_motif_evidence_full_14985.csv
+Illicit-ETH,4670,13450,2.882155555555556,27.00525069970778,77.77743509873011,11.48,47.61,2.65,outputs/etherscan_qwen_counter_20260614/Illicit-ETH/qwen_motif_evidence.csv
+EPSD-Ponzi,4360,13119,4.679758333333334,15.527867357822963,46.722498134697126,11.42,45.21,2.75,outputs/etherscan_qwen_counter_20260614/EPSD-Ponzi/qwen_motif_evidence.csv
