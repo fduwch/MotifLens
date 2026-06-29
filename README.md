@@ -40,7 +40,41 @@ Optional packages:
 
 ## Data Format
 
-Raw benchmark data are not bundled. After downloading datasets from their original sources, convert or place them into:
+Large processed dataset archives are provided separately through OneDrive:
+
+[MotifLens dataset archives](https://1drv.ms/f/c/cdc0f83bf736d892/IgC332kSp1SGT5WyPDthKAXRAZDQ_QBwg_DGh4Phphw7O2I?e=KccvfI)
+
+The folder contains one archive per dataset:
+
+```text
+motiflens_dataset_Meta-Phish.tar.gz
+motiflens_dataset_ZipZap-DXL.tar.gz
+motiflens_dataset_Illicit-ETH.tar.gz
+motiflens_dataset_Eth-Ponzi.tar.gz
+```
+
+Each archive includes the processed graph files and evidence files used by MotifLens:
+
+```text
+<dataset_name>/
+  README.md
+  MANIFEST.json
+  nodes.csv
+  edges.csv
+  conversion_summary.json
+  evidence/
+    rule_evidence.csv
+    llm_motif_evidence.csv
+```
+
+The matching `.sha256` files can be used to verify the downloads. To use the archives, extract them under `data/processed/`, for example:
+
+```bash
+mkdir -p data/processed
+tar -xzf motiflens_dataset_Meta-Phish.tar.gz -C data/processed
+```
+
+Raw benchmark data are not bundled in this repository. For custom datasets, convert or place them into:
 
 ```text
 data/processed/<dataset_name>/
